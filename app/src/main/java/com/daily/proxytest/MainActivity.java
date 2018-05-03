@@ -8,12 +8,15 @@ import android.view.View;
 import com.daily.proxytest.bean.Animal;
 import com.daily.proxytest.inter.FLy;
 import com.daily.proxytest.inter.Run;
-import com.daily.proxytest.reflect.ProxyHandler;
+import com.daily.proxytest.reflect.AnimalProxyHandler;
+import com.example.CustomAnnotation;
 
 import java.lang.reflect.Proxy;
 
+@CustomAnnotation
 public class MainActivity extends AppCompatActivity {
 
+    @CustomAnnotation
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         Class<?>[] interfaces = animal.getClass().getInterfaces();
 
-        ProxyHandler proxyHandler = new ProxyHandler(animal);
+        AnimalProxyHandler proxyHandler = new AnimalProxyHandler(animal);
 
 //        MyClass.generateClassFile(animal.getClass(),"AnimalProxy");
 
@@ -35,10 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
         Run run = (Run) newProxyInstance;
         run.run();
+
     }
 
     public void annotation(View view) {
-        startActivity(new Intent(this, AnnotaionActivity.class));
+        startActivity(new Intent(this, AnnotationActivity.class));
     }
 
 }
