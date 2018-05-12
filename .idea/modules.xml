@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ProxyTest.iml" filepath="$PROJECT_DIR$/ProxyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/aptlib/aptlib.iml" filepath="$PROJECT_DIR$/aptlib/aptlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customerapt-compile/customerapt-compile.iml" filepath="$PROJECT_DIR$/customerapt-compile/customerapt-compile.iml" />
     </modules>
   </component>
 </project>
