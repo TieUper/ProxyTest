@@ -1,1 +1,1 @@
-include ':app', ':aptlib', ':annotation', ':customerapt-compile'
+include ':app', ':aptlib', ':annotation', ':customerapt-compile', ':okio-demo', ':okio-demo', ':Rxjava2'

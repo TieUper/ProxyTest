@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.daily.proxytest.bean.Animal;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
@@ -24,6 +25,7 @@ public class AnimalProxyHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Log.e(TAG, method.getName());
+        Annotation[] annotations = method.getAnnotations();
         return method.invoke(mAnimal, args);
     }
 }

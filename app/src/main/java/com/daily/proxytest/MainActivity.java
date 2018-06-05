@@ -11,7 +11,6 @@ import com.annotation.DIView;
 import com.annotation.GetMsg;
 import com.daily.proxytest.bean.Animal;
 import com.daily.proxytest.inter.FLy;
-import com.daily.proxytest.inter.Run;
 import com.daily.proxytest.reflect.AnimalProxyHandler;
 
 import java.lang.reflect.Proxy;
@@ -27,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         Animal animal = new Animal();
         ClassLoader classLoader = animal.getClass().getClassLoader();
 
@@ -43,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         FLy fly = (FLy) newProxyInstance;
         fly.fly();
 
-        Run run = (Run) newProxyInstance;
-        run.run();
+//        Run run = (Run) newProxyInstance;
+//        run.run();
 
         DIMainActivity.bindView(this);
         mButton.setText("设置了");

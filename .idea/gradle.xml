@@ -8,10 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Rxjava2" />
             <option value="$PROJECT_DIR$/annotation" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/aptlib" />
             <option value="$PROJECT_DIR$/customerapt-compile" />
+            <option value="$PROJECT_DIR$/okio-demo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
